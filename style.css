@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: "Overpass";
+ min-height: 100vh;
+ background-color: hsl(216, 12%, 8%);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container {
+ background-color: hsl(213, 19%, 18%);
+ margin: auto 10px;
+ 
+ border-radius: 1.2rem;
+}
+
+.content, .feedback-content {
+ width: 360px;
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.rating-container {
+ margin: 10px 0;
+}
+
+.rating-image {
+ background-color: hsla(225, 7%, 35%, 0.325);
+ padding: 0.9rem;
+ border-radius: 50%;
+}
+
+.heading {
+ margin-bottom: 10px;
+ color: whitesmoke;
+ font-size: 0.8rem;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: lighter;
+}
+
+.description {
+ margin-bottom: 10px;
+ color: hsl(216, 12%, 54%);
+}
+
+.rating-numbers {
+ display: flex;
+ margin-bottom: 10px;
+ justify-content: space-between;
+}
+
+.rating-number {
+ color: hsl(217, 12%, 63%);
+ background-color: hsla(225, 7%, 35%, 0.325);
+ padding: 10px 18px;
+ border-radius: 50%;
+ margin-bottom: 10px;
+ transition: 0.3s ease all;
+}
+
+.rating-number:hover {
+ cursor: pointer;
+ color: hsl(0, 0%, 100%);
+ background-color: hsl(217, 12%, 63%);
+}
+
+
+.submit-button {
+ border-radius: 2rem;
+ padding: 0.8rem 0;
+ text-transform: uppercase;
+ letter-spacing: 0.2rem;
+ margin-bottom: 10px;
+ background-color: hsl(25, 97%, 53%);
+ color: hsl(0, 0%, 100%);
+ font-weight: bold;
+ cursor: pointer;
+ transition: 0.3s ease all;
+}
+
+/* .submit-button:hover {
+ color: hsl(25, 97%, 53%);
+ background-color: hsl(0, 0%, 100%);
+ cursor: pointer;
+} */
+
+.submit-button:active {
+ translate: 0.1rem;
+ border: 10px 10px 100px rgb(239, 235, 235);
+ color: hsl(25, 97%, 53%);
+ background-color: hsl(0, 0%, 100%);
+ cursor: pointer;
+}
+
+.hide {
+ display: none;
+}
+
+/* feedback-section */
+.feedback-image-container {
+ margin: 0 auto;
+ margin-bottom: 0.5rem;
+}
+
+.feedback-image {
+ width: 100%;
+}
+
+.selected-rating-text {
+ text-align: center;
+ color: hsl(25, 97%, 53%);
+ background-color: hsla(216, 12%, 54%, 0.219);
+ padding: 0.6rem 0.9rem;
+ width: fit-content;
+ margin: 0.5rem auto;
+ border-radius: 2rem;
+}
+
+.thank-you-message {
+ font-weight: bolder;
+ color: white;
+ font-size: 2rem;
+ margin: 0.5rem auto;
+}
+
+.feedback-description {
+ color: hsla(216, 12%, 54%, 0.664);
+ font-weight: 700;
+ margin: 0.5rem auto;
+ text-align: center;
+}
